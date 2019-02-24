@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
     s.summary = 'A powerful InputAccessoryView ideal for messaging applications.'
     s.homepage = 'https://github.com/MessageKit/MessageInputBar'
     s.requires_arc = true
-
+    s. dependency = 'Hakawai'
     # 2 - Version
     s.version = '0.4.1'
     s.pod_target_xcconfig = {

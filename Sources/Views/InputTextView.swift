@@ -23,6 +23,7 @@
  */
 
 import UIKit
+import Hakawai
 
 /**
  A `UITextView` that has a `UILabel` embedded for placeholder text
@@ -33,7 +34,7 @@ import UIKit
  3. Default placeholder text is "New Message"
  4. Will pass a pasted image it's `MessageInputBar`'s `InputManager`s
  */
-open class InputTextView: UITextView {
+open class InputTextView: HKWTextView {
     
     // MARK: - Properties
     
