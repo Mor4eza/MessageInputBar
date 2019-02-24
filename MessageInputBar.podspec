@@ -6,7 +6,6 @@ Pod::Spec.new do |s|
     s.summary = 'A powerful InputAccessoryView ideal for messaging applications.'
     s.homepage = 'https://github.com/MessageKit/MessageInputBar'
     s.requires_arc = true
-    s. dependency = 'Hakawai'
     # 2 - Version
     s.version = '0.4.1'
     s.pod_target_xcconfig = {
@@ -35,11 +34,13 @@ Pod::Spec.new do |s|
     s.subspec 'AttachmentManager' do |b|
         b.source_files = "Plugins/AttachmentManager/**/*.swift"
         b.dependency 'MessageInputBar/Core'
+        b.dependency 'Hakawai'
     end
 
     s.subspec 'AutocompleteManager' do |c|
         c.source_files = "Plugins/AutocompleteManager/**/*.swift"
         c.dependency 'MessageInputBar/Core'
+        c.dependency 'Hakawai'
     end
 
 end
