@@ -135,7 +135,7 @@ open class InputTextView: HKWTextView {
     // MARK: - Initializers
     
     public convenience init() {
-        self.init(frame: .zero)
+        self.init(frame: .zero,textContainer: nil)
     }
     
     public override init(frame: CGRect, textContainer: NSTextContainer?) {
